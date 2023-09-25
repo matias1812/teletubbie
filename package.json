@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "rome --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.0.0",
+    "husky": "^8.0.3",
+    "turbo": "^1.10.12"
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
+},
+  "lint-staged": {
+      "*.{js,jsx}": [
+          "pnpm biome fmt ./ --write"
+      ]
+  }
+}

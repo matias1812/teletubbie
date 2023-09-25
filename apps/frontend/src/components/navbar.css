@@ -1,0 +1,22 @@
+.nav{
+    
+    height: 40rem;
+    line-height: 40rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.img_nav{
+    width: 5rem;
+    margin-top: -0rem;
+    margin-left: -8.5rem;
+}
+
+.options{
+    margin-left: 12.5rem;
+}
+
+.btn1 {
+    margin: 0.5rem;
+} 
